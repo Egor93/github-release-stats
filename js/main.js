@@ -200,7 +200,7 @@ function redirect(page, perPage) {
 // The main function
 $(function() {
     $("#loader-gif").hide();
-
+    redirect(1, 10);
     validateInput();
     $("#username, #repository").keyup(validateInput);
 
@@ -222,9 +222,9 @@ $(function() {
         if(username == "" && repository == "") return;
         redirect(page, this.value);
     });
-
-    var username = getQueryVariable("username");
-    var repository = getQueryVariable("repository");
+    
+    var username = "pangaea-data-publisher"
+    var repository = "qualianon"
     var showSearch = getQueryVariable("search");
     var page = getQueryVariable("page") || 1;
     var perPage = getQueryVariable("per_page") || 5;
