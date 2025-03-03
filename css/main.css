@@ -43,7 +43,7 @@ code {
 
 .release {
     background-color: rgba(127, 140, 141, 0.1);
-    border: solid 1px rgba(127, 140, 141, 0.4);
+    border: #990033;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -51,12 +51,12 @@ code {
 
 .release h3 .glyphicon {
     cursor: default;
-    color: rgba(66, 139, 202, 1);
+    color: #990033;
 }
 
 .release h3 .badge {
     cursor: default;
-    background-color: rgba(66, 139, 202, 1);
+    background-color:#990033;
     color: #fff;
 }
 
@@ -137,7 +137,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 40px;
-    background-color: rgba(210, 210, 210, 0.2);
+    background-color: #990033;
     padding: 10px;
     text-align: center;
     border-top: 1px solid rgba(210, 210, 210, 0.4);
