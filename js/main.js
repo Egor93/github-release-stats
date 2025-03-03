@@ -200,7 +200,7 @@ function redirect(page, perPage) {
 // The main function
 $(function() {
     $("#loader-gif").hide();
-    redirect(1, 10);
+    
     validateInput();
     $("#username, #repository").keyup(validateInput);
 
@@ -225,9 +225,9 @@ $(function() {
     
     var username = "pangaea-data-publisher"
     var repository = "qualianon"
-    var showSearch = getQueryVariable("search");
-    var page = getQueryVariable("page") || 1;
-    var perPage = getQueryVariable("per_page") || 5;
+    var showSearch = "0";
+    var page = 1;
+    var perPage = 5;
 
     if(username != "" && repository != "") {
         $("#username").val(username);
